@@ -116,3 +116,44 @@ Productss.prototype.writter = function() {
 
 var temps = new Productss(1, 2, 3);
 temps.writter();
+
+class Animal {
+  constructor() {
+    this.name = "Animal";
+  }
+
+  toString() {
+    return this.name;
+  }
+}
+
+class Mammal extends Animal {
+  constructor() {
+    super();
+    this.name = "Mammal";
+  }
+}
+
+class Cat extends Mammal {
+  constructor(color, gender) {
+    super();
+
+    this.color = color;
+    this.gender = gender;
+  }
+
+  greet() {
+    return `Hi ${this.name} your age is ${this.gender} your color ${this.color}`;
+  }
+}
+
+// instance
+benito = new Cat("red", "male");
+
+function enums(object) {
+  for (const prop in object) {
+    console.log(`props ${EOL}`, object[prop]);
+  }
+}
+
+enums(benito);
