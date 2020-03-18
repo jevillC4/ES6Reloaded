@@ -1,0 +1,26 @@
+.DS_Store
+.vscode
+
+# Logs
+log
+*.log
+*.tern-port
+npm-debug.log
+npm-debug.log.*
+
+# Runtime data
+pids
+*.pid
+*.seed
+
+# Dependency directory
+node_modules
+bower_components
+public/bower_components
+
+# Temp directory
+.tmp
+.sass-cache
+
+# config files
+/config/env/*
